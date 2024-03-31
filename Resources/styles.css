@@ -1,0 +1,379 @@
+html, body {
+    font-family: 'Rosario', Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    margin: 0;
+    color: #3E332A;
+    background-color: #fff;
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+@media only screen and (min-width: 1440px) {
+    body {
+        max-width: 75%;
+        margin: 0 auto;
+    }
+}
+
+a {
+    color: #5D3B1D; 
+    text-decoration: none;
+}
+
+a:hover {
+    color: #000;
+}
+
+h2 {
+    font-size: 3rem;
+    font-weight: 300;
+}
+
+h3 {
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+
+/* Navigation */
+
+.navigation {
+    border-bottom: 1px solid #000;
+    width: 100%;
+}
+
+.nav-elements{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 1rem 3rem;
+}
+
+.logo {
+    font-family: 'Cinzel Decorative', 'Times New Roman', Times, serif;
+    font-size: 2.5rem;
+}
+
+.order-today {
+    font-family: "Playfair Display", 'Times New Roman', Times, serif;
+    letter-spacing: .3rem;
+    text-transform: uppercase;
+    border: 1px solid #000;
+    padding: 1rem;
+    font-size: 1.5rem;
+}
+
+@media only screen and (max-width: 900px) {
+    .logo {
+        font-size: 2rem;
+    }
+
+    .order-today {
+        font-size: 1rem;
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    .navigation {
+        text-align: center;
+    }
+
+    .nav-elements {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 0.5rem;
+        margin: 1rem 1.5rem;
+    }
+    .order-today {
+        font-size: 1rem;
+    }
+}
+
+/* Header  */
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    margin: 3rem;
+    gap: 1rem;
+}
+
+#header-image {
+    width: 50%;
+    height: auto;
+    object-fit: cover;
+}
+
+.header-text {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 1rem 4rem;
+}
+
+.header-text h1 {
+    font-weight: 300;
+    font-size: 4rem;
+    line-height: 1;
+}
+
+.header-button {
+    background-color: #fff;
+    border: 1px solid #000;
+    padding: 1rem;
+    font-family: "Playfair Display", 'Times New Roman', Times, serif;
+    letter-spacing: .1rem;
+    text-transform: uppercase;
+}
+
+@media only screen and (max-width: 700px) {
+    .header {
+        flex-direction: column;
+        justify-content: center;
+        /* width: 90%; */
+    }
+
+    #header-image {
+        min-width: 100%;
+        height: auto;
+        object-fit: cover;
+    }
+    
+    .header-text {
+        min-width: 90%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+}
+
+/* Description */
+
+.desc-container {
+    background-color: #EDE0DC;
+    width: 100%;
+}
+
+.description {
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.description-text {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 1rem 4rem;
+}
+
+.description-text p {
+    font-size: 1.25rem;
+    font-weight: 300;
+}
+
+.description-images {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 1rem;
+}
+
+.description-images img {
+    max-height: 200px;
+    width: 100%;
+    padding: 1rem;
+    object-fit: cover;
+}
+
+@media only screen and (max-width: 700px) {
+    .description {
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .description-text, .description-images {
+        width: 90%;
+    }
+}
+
+
+/* Offers */
+
+.offers {
+    margin: 3rem;
+}
+
+.offers-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.offers-desc {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 1.3rem;
+}
+
+.offers-desc img {
+    max-width: auto;
+    height: 400px;
+}
+
+@media only screen and (max-width: 945px) {
+    .offers {
+        text-align: center;
+    }
+
+    .offers-container {
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+
+    .offers-desc img {
+        max-width: 100%;
+        height: 400px;
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    .offers-container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .offers-desc img {
+        width: 100%;
+        height: auto;
+    }
+}
+
+/* Meet the team  */
+
+.meet-the-team {
+    background-color: #EDE0DC;
+    width: 100%;
+}
+
+.meet-the-team h2 {
+    margin: 1rem 3rem;
+    padding: 2rem 0;
+}
+
+.team-container {
+    display: flex;
+    justify-content: space-around;
+}
+
+.team-desc {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 1.3rem;
+}
+
+.team-desc img {
+    max-width: auto;
+    height: 400px;
+}
+
+@media only screen and (max-width: 945px) {
+    .meet-the-team {
+        text-align: center;
+    }
+
+    .team-container {
+        flex-wrap: wrap;
+    }
+
+    .team-desc img {
+        max-width: 100%;
+        height: 400px;
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    .team-container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .team-desc img {
+        max-width: 100%;
+        height: 400px;
+    }
+}
+
+
+/* Contact Us  */
+
+.contact-us {
+    margin: 3rem;
+}
+
+.contact-us h2 {
+    font-size: 2.5rem;
+}
+
+.contactus-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 3rem;
+}Resources/Chocolate Hamper.jpeg
+
+#contactus-image {
+    width: 50%;
+}
+
+.contactus-container img {
+    width: 100%;
+    max-height: 400px;
+    object-fit: cover;
+}
+
+.contact-information {
+    width: 40%;
+    text-transform: uppercase;
+    padding-bottom: 2rem;
+    text-align: center;
+}
+
+.contact-information img {
+    max-height: 50px;
+    width: auto;
+    object-fit: contain;
+}
+
+@media only screen and (max-width: 700px) {
+    .contact-us {
+        text-align: center;
+    }
+
+    .contactus-container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .contact-information {
+        width: 100%;
+    }
+
+    .contactus-container img {
+        width: 100%;
+        height: auto;
+    }
+}
